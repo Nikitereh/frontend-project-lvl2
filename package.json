@@ -21,8 +21,11 @@
   },
   "homepage": "https://github.com/Nikitereh/frontend-project-lvl2#readme",
   "dependencies": {
+    "@stdlib/process-cwd": "^0.0.8",
     "commander": "^9.1.0",
     "js-yaml": "^4.1.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "path-resolve": "^1.0.2",
+    "readfiles-sync": "^0.0.2"
   }
 }
