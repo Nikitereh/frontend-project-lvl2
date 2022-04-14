@@ -9,7 +9,7 @@ Repository with gendiff function, which shows the difference between two files
 ***Make sure that you made next steps***
 
 - Clone repository. Use `git clone` + git@github.com:Nikitereh/frontend-project-lvl2.git
-- Enter `make install`. Install depencies
+- Enter `make install`. Install dependencies
 - Enter `make link`. The package gendiff function
 If you need help, enter `gendiff -h`
 ### Review
