@@ -1,2 +1,17 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Nikitereh/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Nikitereh/frontend-project-lvl2/actions)
+
+### About
+
+Repository with gendiff function, which shows the difference between two files
+### Before you start
+
+***Make sure that you made next steps***
+
+- Clone repository. Use `git clone` + git@github.com:Nikitereh/frontend-project-lvl2.git
+- Enter `make install`. Install depencies
+- Enter `make link`. The package gendiff function
+If you need help, enter `gendiff -h`
+### Review
+
+[![asciicast](https://asciinema.org/a/GlS2ji5G32sCaNeclC6dcShfm.svg)](https://asciinema.org/a/GlS2ji5G32sCaNeclC6dcShfm)
