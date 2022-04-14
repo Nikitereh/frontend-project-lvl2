@@ -1,7 +1,7 @@
 import stylish from './stylish.js';
 import plain from './plain.js';
+import json from './json.js';
 
-const json = (tree, spacesCount = 2) => JSON.stringify(tree, null, ' '.repeat(spacesCount));
 
 const formattedTree = (tree, format) => {
   switch (format) {
