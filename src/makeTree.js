@@ -51,6 +51,6 @@ const tree = (file1, file2) => {
   return result;
 };
 
-const genTree = (file1, file2) => ({ type: 'root', children: tree(file1, file2) });
+const makeTree = (file1, file2) => ({ type: 'root', children: tree(file1, file2) });
 
-export default genTree;
+export default makeTree;
