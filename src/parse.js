@@ -1,7 +1,6 @@
 import { load } from 'js-yaml';
 
 const parse = (data, formatName) => {
-console.log('format',formatName)
   switch (formatName) {
     case 'json':
       return JSON.parse(data);
