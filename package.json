@@ -8,7 +8,10 @@
     "gendiff": "bin/gendiff.js"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,12 +26,7 @@
   "dependencies": {
     "@babel/eslint-parser": "^7.17.0",
     "@stdlib/process-cwd": "^0.0.8",
-    "babel-eslint": "^10.1.0",
     "commander": "^9.1.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.1.4",
     "file-system": "^1.2.2",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
@@ -43,7 +41,15 @@
     "@babel/core": "^7.17.9",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.5.1",
     "eslint": "^8.13.0",
-    "jest": "^27.5.1"
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.4",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1"
   }
 }
