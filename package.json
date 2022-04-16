@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Nikitereh/frontend-project-lvl2#readme",
   "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
     "@stdlib/process-cwd": "^0.0.8",
     "babel-eslint": "^10.1.0",
     "commander": "^9.1.0",
@@ -31,6 +32,7 @@
     "file-system": "^1.2.2",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
     "npm-path": "^2.0.4",
     "path-resolve": "^1.0.2",
     "readfiles-sync": "^0.0.2",
@@ -41,6 +43,7 @@
     "@babel/core": "^7.17.9",
     "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
+    "eslint": "^8.13.0",
     "jest": "^27.5.1"
   }
 }
