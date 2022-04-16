@@ -13,9 +13,9 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '16.x'
-    - run: make install
-    - run: make test
-    - run: make lint
+    - run: npm ci
+    - run: npm test
+    - run: npx eslint .
     - name: code coverage 
       uses:  paambaati/codeclimate-action@v3.0.0
       env:
