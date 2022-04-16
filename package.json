@@ -25,6 +25,7 @@
     "babel-eslint": "^10.1.0",
     "commander": "^9.1.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.1.4",
     "file-system": "^1.2.2",
