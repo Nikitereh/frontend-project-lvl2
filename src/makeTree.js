@@ -36,8 +36,8 @@ const tree = (file1, file2) => {
       return {
         key,
         type: 'changed',
-        removedValue: value1,
-        addedValue: value2,
+        value1,
+        value2,
       };
     }
 

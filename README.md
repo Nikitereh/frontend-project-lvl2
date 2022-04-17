@@ -16,4 +16,4 @@ Repository with gendiff function, which shows the difference between two files
 - If you need help, enter `gendiff -h`
 ### Review
 
-[![asciicast](https://asciinema.org/a/GlS2ji5G32sCaNeclC6dcShfm.svg)](https://asciinema.org/a/GlS2ji5G32sCaNeclC6dcShfm)
+[![asciicast](https://asciinema.org/a/7vNFEt4CbfPxErTrck92fYcib.svg)](https://asciinema.org/a/7vNFEt4CbfPxErTrck92fYcib)
