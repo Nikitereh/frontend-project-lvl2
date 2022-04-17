@@ -15,5 +15,8 @@ Repository with gendiff function, which shows the difference between two files
 - Enter `make link`. The package gendiff function
 - If you need help, enter `gendiff -h`
 ### Review
-
+## Gendiff json files
 [![asciicast](https://asciinema.org/a/7vNFEt4CbfPxErTrck92fYcib.svg)](https://asciinema.org/a/7vNFEt4CbfPxErTrck92fYcib)
+
+## Gendiff yml files
+[![asciicast](https://asciinema.org/a/RC4NHayHZh3bMhATaWgmjIJCO.svg)](https://asciinema.org/a/RC4NHayHZh3bMhATaWgmjIJCO)
