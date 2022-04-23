@@ -1,38 +1,40 @@
-import union from 'lodash/union.js';
-import has from 'lodash/has.js';
 import sortBy from 'lodash/sortBy.js';
+import union from 'lodash/union.js';
+import isPlainObject from 'lodash/isPlainObject.js';
+import has from 'lodash/has.js';
+import isEqual from 'lodash/isEqual.js';
 
-const tree = (file1, file2) => {
-  const keys1 = Object.keys(file1);
-  const keys2 = Object.keys(file2);
+const genTree = (data1, data2) => {
+  const keys1 = Object.keys(data1);
+  const keys2 = Object.keys(data2);
   const sortedKeys = sortBy(union(keys1, keys2));
 
   const result = sortedKeys.map((key) => {
-    const value1 = file1[key];
-    const value2 = file2[key];
+    const value1 = data1[key];
+    const value2 = data2[key];
 
-    if (typeof (value1) === 'object' && typeof (value2) === 'object') {
+    if (isPlainObject(value1) && isPlainObject(value2)) {
       return {
         key,
         type: 'nested',
-        children: tree(value1, value2),
+        children: genTree(value1, value2),
       };
     }
-    if (!has(file2, key)) {
+    if (!has(data2, key)) {
       return {
         key,
         type: 'deleted',
         value: value1,
       };
     }
-    if (!has(file1, key)) {
+    if (!has(data1, key)) {
       return {
         key,
         type: 'added',
         value: value2,
       };
     }
-    if (value1 !== value2) {
+    if (!isEqual(value1, value2)) {
       return {
         key,
         type: 'changed',
@@ -51,6 +53,6 @@ const tree = (file1, file2) => {
   return result;
 };
 
-const makeTree = (file1, file2) => ({ type: 'root', children: tree(file1, file2) });
+const makeTree = (data1, data2) => ({ type: 'root', children: genTree(data1, data2) });
 
 export default makeTree;
