@@ -1,10 +1,10 @@
 import sortBy from 'lodash/sortBy.js';
 import union from 'lodash/union.js';
 import isPlainObject from 'lodash/isPlainObject.js';
-import has from 'lodash/has.js';
 import isEqual from 'lodash/isEqual.js';
+import has from 'lodash/has.js';
 
-const genTree = (data1, data2) => {
+const generateTree = (data1, data2) => {
   const keys1 = Object.keys(data1);
   const keys2 = Object.keys(data2);
   const sortedKeys = sortBy(union(keys1, keys2));
@@ -17,7 +17,7 @@ const genTree = (data1, data2) => {
       return {
         key,
         type: 'nested',
-        children: genTree(value1, value2),
+        children: generateTree(value1, value2),
       };
     }
     if (!has(data2, key)) {
@@ -53,6 +53,6 @@ const genTree = (data1, data2) => {
   return result;
 };
 
-const makeTree = (data1, data2) => ({ type: 'root', children: genTree(data1, data2) });
+const makeTree = (data1, data2) => ({ type: 'root', children: generateTree(data1, data2) });
 
 export default makeTree;

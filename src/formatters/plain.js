@@ -39,7 +39,7 @@ const plain = (tree) => {
         return [];
       }
       default:
-        throw new Error(`Unknown type: '${type}' of node!`);
+        throw new Error(`Unknown type: '${type}'`);
     }
   };
 
