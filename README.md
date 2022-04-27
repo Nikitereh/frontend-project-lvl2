@@ -20,3 +20,6 @@ Repository with gendiff function, which shows the difference between two files
 
 ## Gendiff nested files
 [![asciicast](https://asciinema.org/a/fiM9KBbfBieExKCnU60Y00QvM.svg)](https://asciinema.org/a/fiM9KBbfBieExKCnU60Y00QvM)
+
+## Gendiff using format
+[![asciicast](https://asciinema.org/a/Hdtu0E8gn0x9uT3tSgoRb3koj.svg)](https://asciinema.org/a/Hdtu0E8gn0x9uT3tSgoRb3koj)
