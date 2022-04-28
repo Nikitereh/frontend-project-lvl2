@@ -14,4 +14,3 @@ const parse = (fileContent, formatName) => {
 };
 
 export default parse;
-
