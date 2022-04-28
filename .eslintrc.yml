@@ -6,6 +6,6 @@ parserOptions:
   sourceType: module
 rules: {
   no-console: 0,
-  eol-last: "always",
+  eol-last: 0,
   no-multi-spaces: 0
 }
