@@ -64,6 +64,7 @@
   "homepage": "https://github.com/Nikitereh/frontend-project-lvl2#readme",
   "dependencies": {
     "@babel/eslint-parser": "^7.17.0",
+    "@jest/globals": "^28.0.2",
     "@stdlib/process-cwd": "^0.0.8",
     "commander": "^9.1.0",
     "file-system": "^1.2.2",

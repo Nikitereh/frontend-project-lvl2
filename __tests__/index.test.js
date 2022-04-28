@@ -2,7 +2,7 @@ import { test, expect } from '@jest/globals';
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import genDiff from '../src/index.js';
-import * as expecteds   from '../__fixtures__';
+import * as expecteds from '../__fixtures__';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
